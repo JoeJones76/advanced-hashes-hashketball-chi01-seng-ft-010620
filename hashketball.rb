@@ -1,76 +1,73 @@
 game_hash = {
 
-	'home': {
+	home: {
 
-		'team_name': "Brooklyn Nets",
+		team_name: "Brooklyn Nets",
 
-    'colors': ["Black", "White"],
+    colors: ["Black", "White"],
 
-    'players': {
+    players: {
 
-      "Alan Anderson": {
+      Alan Anderson: {
 
-	      'number': 0,
+	      number: 0,
 
-	      'shoe': 16,
+	      shoe: 16,
 
-	      'points': 22,
+	      points: 22,
 
-	      'rebounds': 12,
+	      rebounds: 12,
 
-	      'assists': 12,
+	      assists: 12,
 
-	      'steals': 3,
+	      steals: 3,
 
-	      'blocks': 1,
+	      blocks: 1,
 
-	      'slam_dunks': 1
-
-      },
-
-      "Reggie Evans": {
-
-        'number': 30,
-
-        'shoe': 14,
-
-        'points': 12,
-
-        'rebounds': 12,
-
-        'assists': 12,
-
-        'steals': 12,
-
-        'blocks': 12,
-
-        'slam_dunks': 7
+	      slam_dunks: 1
 
       },
 
-      :Brook_Lopez {
+      Reggie Evans: {
 
-        :number 11,
+        number: 30,
 
-        'shoe': 17,
+        shoe: 14,
 
-        'points': 17,
+        points: 12,
 
-        'rebounds': 19,
+        rebounds: 12,
 
-        'assists': 10,
+        assists: 12,
 
-        'steals': 3,
+        steals: 12,
 
-        'blocks': 1,
+        blocks: 12,
 
-        'slam_dunks': 15
-
-  
+        slam_dunks: 7
 
       },
 
-      
+      Brook Lopez: {
+
+        number: 11,
+
+        shoe: 17,
+
+        points: 17,
+
+        rebounds: 19,
+
+        assists: 10,
+
+        steals: 3,
+
+        blocks: 1,
+
+        slam_dunks: 15
+
+      },
+
 
       }
 
@@ -78,73 +75,75 @@ game_hash = {
 
   },
 
-  :away {
+  away: {
 
-    :team_name "Charlotte Hornets",
+    team_name: "Charlotte Hornets",
 
-    :colors ["Turquoise", "Purple"],
+    colors: ["Turquoise", "Purple"],
 
-    :players {
+    players: {
 
-      :Jeff_Adrien {
+      Jeff Adrien: {
 
-        :number 4,
+        number: 4,
 
-        'shoe': 18,
+        shoe: 18,
 
-        'points': 10,
+        points: 10,
 
-        'rebounds': 1,
+        rebounds: 1,
 
-        'assists': 1,
+        assists: 1,
 
-        'steals': 2,
+        steals: 2,
 
-        'blocks': 7,
+        blocks: 7,
 
-        'slam_dunks': 2
-
-      },
-
-      "Bismak Biyombo": {
-
-        'number': 0,
-
-        'shoe': 16,
-
-        'points': 12,
-
-        'rebounds': 4,
-
-        'assists': 7,
-
-        'steals': 7,
-
-        'blocks': 15,
-
-        'slam_dunks': 10
+        slam_dunks: 2
 
       },
 
-      "DeSagna Diop": {
+      Bismak Biyombo: {
 
-        'number': 2,
+        number: 0,
 
-        'shoe': 14,
+        shoe: 16,
 
-        'points': 24,
+        points: 12,
 
-        'rebounds': 12,
+        rebounds: 4,
 
-        'assists': 12,
+        assists: 7,
 
-        'steals': 4,
+        steals: 7,
 
-        'blocks': 5,
+        blocks: 15,
 
-        'slam_dunks': 5
+        slam_dunks: 10
 
-    
+      },
+
+      DeSagna Diop: {
+
+        number: 2,
+
+        shoe: 14,
+
+        points: 24,
+
+        rebounds: 12,
+
+        assists: 12,
+
+        steals: 4,
+
+        blocks: 5,
+
+        slam_dunks: 5
+
+      },
+
+
       }
 
     }
@@ -155,15 +154,8 @@ game_hash = {
 
 
 
+    score['away'] += stats['points']
 
 
 
-
-
-
-
-
-
-
-
-
+  return game_hash[max(score, key=score.get)]['team_name']
