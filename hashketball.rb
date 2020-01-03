@@ -48,9 +48,9 @@ game_hash = {
 
       },
 
-      "Brook Lopez": {
+      :Brook_Lopez {
 
-        'number': 11,
+        :number 11,
 
         'shoe': 17,
 
@@ -78,17 +78,17 @@ game_hash = {
 
   },
 
-  'away': {
+  :away {
 
-    'team_name': "Charlotte Hornets",
+    :team_name "Charlotte Hornets",
 
-    'colors': ["Turquoise", "Purple"],
+    :colors ["Turquoise", "Purple"],
 
-    'players': {
+    :players {
 
-      "Jeff Adrien": {
+      :Jeff_Adrien {
 
-        'number': 4,
+        :number 4,
 
         'shoe': 18,
 
