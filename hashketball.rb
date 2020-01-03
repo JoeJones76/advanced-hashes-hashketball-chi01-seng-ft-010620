@@ -152,10 +152,3 @@ game_hash = {
 
 }
 
-
-
-    score['away'] += stats['points']
-
-
-
-  return game_hash[max(score, key=score.get)]['team_name']
